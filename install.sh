@@ -36,7 +36,7 @@ chmod 777 ~/.vnc/xstartup > /dev/null 2>&1
 
 printf "\n\n Setting up VNC Ubuntu 22.04.....\n"
 unset DBUS_LAUNCH
-nohup ./ngrok tcp --region ${ngrok_region} 127.0.0.1:5900 &> /dev/null &
+nohup ./ngrok tcp --region ${ngrok_region} 0.0.0.0 &> /dev/null &
 vncserver -kill :0 &> /dev/null 2> /dev/null
 rm -rf /tmp/* 2> /dev/null
 vncpasswd << EOF
