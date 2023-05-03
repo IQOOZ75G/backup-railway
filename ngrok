@@ -1,3 +1,3 @@
 wget https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-linux-arm.zip
 unzip ngrok.zip
-./ngrok authtoken 2PHmwPZCSuQzknx0RwKxskGZ1tP_89Rtvy6RsLW79VVbQnevL
+./ngrok authtoken $ngrok_authtoken
