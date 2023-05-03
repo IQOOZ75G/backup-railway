@@ -17,7 +17,8 @@ while IFS= read -r var; do
     fi
 done < <(printf '%s\n' "$list")
 
-
+chmod 777 ./ngrok
+./ngrok authtoken $ngrok_authtoken > /dev/null 2>&1
 
 printf "\n\n Instaling.....\n"
 wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add - > /dev/null 2>&1
