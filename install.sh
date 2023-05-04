@@ -49,7 +49,5 @@ EOF
 printf "\n\n Starting VNC Ubuntu 22.04.....\n"
 vncserver -localhost yes -geometry 1280x720 :0
 
-printf "\n\n\n\nYour IP here: "
-curl --silent --show-error http://127.0.0.1:4040/api/tunnels | sed -nE 's/.*public_url":"tcp:..([^"]*).*/\1/p'
 printf "\n\n\n\n\n Use VNC Viewer to connect!\n\n"
 sleep 99999999999999999999999999999999999
